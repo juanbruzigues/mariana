@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+ul {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px auto;
+  padding: 10px;
+  /* Garante que o alinhamento flex inicial seja à esquerda em telas maiores */
+  justify-content: flex-start;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  font-size: 6.2em;
+  text-decoration: none;
+  letter-spacing: 1px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+  position: relative;
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 4px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+  }
+
+  &:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 10px var(--clr));
+  }
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1024px) {
+  ul {
+    right: 15px;
+    gap: 16px;
+  }
+
+  ul li a {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 768px) {
+    ul {
+    /* Restaura o comportamento de bloco normal */
+    position: static;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    transform: none;
+    flex-direction: row;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 10px;
+    margin: 20px auto; /* Mantém margens para espaçamento */
+    padding: 0;
+  }
+
+
+  ul li a {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 320px) {
+    ul {
+    /* Restaura o comportamento de bloco normal */
+    position: static;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    transform: none;
+    flex-direction: row;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 10px;
+    margin: 20px auto; /* Mantém margens para espaçamento */
+    padding: 0;
+  }
+  ul li a {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  ul {
+    /* Restaura o comportamento de bloco normal */
+    position: static;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    transform: none;
+    flex-direction: row;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 10px;
+    margin: 20px auto; /* Mantém margens para espaçamento */
+    padding: 0;
+  }
+
+  ul li a {
+    font-size: 1.5em;
+  }
+    }
+
+
+    
