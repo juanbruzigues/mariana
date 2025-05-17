@@ -10,7 +10,7 @@ const ParticleCanvas = () => {
     canvas.width = window.innerWidth;
     canvas.height = document.body.scrollHeight;
 
-    const text = "Mariana";
+    const text = "Meu amor";
     ctx.font = "bold 60px Arial";
     ctx.fillStyle = "white";
     ctx.textAlign = "left"; // alinhamento à esquerda
