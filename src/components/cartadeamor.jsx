@@ -4,9 +4,11 @@ import './cartadeamor.scss';
 const CartaDeAmor = () => {
   return (
     <div className = "carta">
-      <p>Já faz um ano desde que começamos essa jornada juntos, e cada dia ao seu lado me mostra o quanto você é essencial para mim. Te amar é encontrar paz e força ao mesmo tempo, é querer estar perto em todos os momentos, mesmo nos silenciosos.</p>
-      <p>Obrigado por ser meu porto seguro e minha alegria. Que venham muitos anos assim do seu lado.</p>
-      <p>Com todo carinho,</p>
+      <p>A vida me fez amadurecer, mas nunca me fez esquecer.
+        Você sempre foi aquele amor que ficou mesmo com o tempo, mesmo com a distância, mesmo com as mudanças.</p>
+      <p>“Tô mais maduro e mais seguro do que eu quero…”
+        Ganhei algumas marcas, perdi um pouco do med e descobri que o amor de verdade não passa. Ele cresce.</p>
+      <p>Com todo amor,</p>
       <p>Juan</p>
     </div>
   );
